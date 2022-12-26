@@ -1,6 +1,28 @@
 {
-  "name": "rds-themes",
+  "name": "raaghu-themes",
   "version": "0.0.1",
+  "license": "MIT",
+  "author": "WAI Technologies Pvt. Ltd. <contactus@waiin.com>",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli)",
+  "sideEffects": false,
+  "publishConfig": {
+    "@alok-nakhate:registry": "https://npm.pkg.github.com",
+    "tag": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wai-Technologies/raaghu-themes.git"
+  },
+  "keywords": [
+    "raaghu",
+    "themes",
+    "rds-themes"
+  ],
+  "bugs": {
+    "url": "https://github.com/Wai-Technologies/raaghu-angular/issues",
+    "email": "contact@raaghu.io"
+  },
+  "homepage": "https://github.com/Wai-Technologies/raaghu-angular#readme",
   "schematics": "./schematics/collection.json",
   "ng-add": {
     "save": "peerDependencies"
