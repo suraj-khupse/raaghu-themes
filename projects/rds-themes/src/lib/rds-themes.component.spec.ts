@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LibThemeComponent } from './lib-theme.component';
+import { LibThemeComponent } from './rds-themes.component';
 
 describe('LibThemeComponent', () => {
   let component: LibThemeComponent;

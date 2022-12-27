@@ -8,6 +8,11 @@
     "inlineSources": true,
     "types": []
   },
+  "buildOptions": {
+    "styles": [
+      "./styles/default.scss"
+    ]
+  },
   "exclude": [
     "**/*.spec.ts"
   ]

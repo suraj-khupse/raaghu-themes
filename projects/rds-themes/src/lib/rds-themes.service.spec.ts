@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { LibThemeService } from './lib-theme.service';
+import { LibThemeService } from './rds-themes.service';
 
 describe('LibThemeService', () => {
   let service: LibThemeService;

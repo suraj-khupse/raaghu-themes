@@ -10,8 +10,8 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "lib-theme": [
-        "dist/lib-theme"
+      "rds-themes": [
+        "dist/rds-themes"
       ]
     },
     "noFallthroughCasesInSwitch": true,

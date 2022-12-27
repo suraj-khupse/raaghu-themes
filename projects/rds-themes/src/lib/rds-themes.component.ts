@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-lib-theme',
+  selector: 'rds-themes',
   template: `
     <p>
-      lib-theme works!
+      rds-themes works!
     </p>
   `,
   styles: [
   ]
 })
-export class LibThemeComponent {
+export class RdsThemesComponent {
 
 }

@@ -15,7 +15,7 @@
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "rootDir": "schematics",
-    "outDir": "../../dist/lib-theme/schematics",
+    "outDir": "../../dist/rds-themes/schematics",
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "sourceMap": false,

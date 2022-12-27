@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { LibThemeComponent } from './lib-theme.component';
+import { RdsThemesComponent } from './rds-themes.component';
 
 
 
 @NgModule({
   declarations: [
-    LibThemeComponent
+    RdsThemesComponent
   ],
   imports: [
   ],
   exports: [
-    LibThemeComponent
+    RdsThemesComponent
   ]
 })
 export class LibThemeModule { }

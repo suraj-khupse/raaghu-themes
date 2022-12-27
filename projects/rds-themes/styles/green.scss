@@ -1,6 +1,5 @@
-$theme: "default" !default;
+$theme: "green" !default;
 
-$primary: #7e2eef;
 $secondary: #2b0066;
 $success: #2eef59;
 $info: #3ef1e8;
@@ -14,14 +13,14 @@ $black: #000 !default;
 $gray-500: #adb5bd !default;
 $gray-200: #e9ecef !default;
 $white: #fff !default;
-$gray-500: #6874a1 !default;
 $gray-400: #ced4da !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-300: #dee2e6 !default;
 $gray-100: #f8f9fa !default;
-$gray-900: #34384f !default;
-// /*Variables*/ /*Success - Green*/
+
+// /*Variables*/
+// /*Success - Green*/
 $success-0: #deffe4;
 $success-100: #befeca;
 $success-200: #9efcb0;
@@ -65,7 +64,6 @@ $action-600: #0085d3;
 $action-700: #005fa4;
 $action-800: #004986;
 $action-900: #003566;
-$blue-100: #444e73;
 // /*Primary - Purple*/
 $primary-0: #ecdeff;
 $primary-100: #d8befe;
@@ -114,30 +112,13 @@ $default-100: #f58220;
 
 // /*Chart color variables*/
 :root {
-  --chart-bool-color1: #e30707;
-  --chart-bool-color2: #ebeefb;
-  --chart-bubble-color1: #fa896b;
-  --chart-bubble-color2: #78f7b8;
-  --chart-area-color1: #fa896b;
-  --chart-area-color2: #78f7b8;
-  --chart-doughnut-color1: #0085d3;
-  --chart-doughnut-color2: #bf00bb;
-  --chart-doughnut-color3: #7e2eef;
-  --chart-doughnut-text-color: rgba(0, 0, 0, 100%);
-  --chart-bar-horizontal-color1: #fa896b;
-  --chart-bar-horizontal-color2: #78f7b8;
-  --chart-bar-horizontal-color: rgba(7, 150, 227, 5);
-  --chart-bar-horizontal-border-color: rgba(214, 66, 8);
-  --chart-line-color1: rgba(25, 70, 186, 0);
-  --chart-line-color2: rgba(48, 22, 194, 0);
-  --chart-line-color3: rgba(17, 80, 239, 0);
-  --chartColor7: #ebeefb;
-  --chartColor2: #bf00bb;
-  --chartColor3: #7e2eef;
-  --chartColor4: #0085d3;
-  --chartColor5: #5151d3;
-  --chartColor6: #edb371;
   --chartColor1: #01ae9d;
+  --chartColor2: #ebeefb;
+  --chartColor3: #edb371;
+  --chartColor4: #ca2882;
+  --chartColor5: #5151d3;
+  --chartColor6: #928ae0;
+  --chartColor7: #323b47;
   --chartColor8: #f58220;
   --chartColor9: #ea2745;
   --chartColor10: #00ffe6;
@@ -153,30 +134,83 @@ $default-100: #f58220;
   --chartgradient10: rgba(25, 70, 186, 1%);
 }
 
-//$input-select-bg: $dark-200 !default;
-$form-select-bg: $dark-200 !default;
-$form-select-border-color: $dark-100 !default;
-$card-darkborder-color: $gray-800 !default;
-//$offcanvas-border-color: $dark-400 !default;
+$accessible-200: #322d4a;
+$accessible-300: #3a3d5a;
+$accessible-400: #474c74;
+$accessible-500: #4400a4;
+$accessible-600: #282a42;
+$accessible-700: #30334e;
+$accessible-800: #13002e;
 
-// $offcanvas-bottom-border-color: $dark-100 !default;
-// $nav-tabs-bottom-border-color: $dark-100 !default;
+$form-select-bg: $accessible-300 !default;
+$form-select-border-color: $accessible-400 !default;
+//$offcanvas-border-color: $accessible-300 !default;
+$offcanvas-bottom-border-color: $accessible-300 !default;
+$nav-tabs-bottom-border-color: $accessible-300 !default;
+//$nav-tabs-border-color: $accessible-300 !default;
+$card-bg-color: $accessible-700 !default;
 
-$modal-bg-color: $dark-200 !default;
+$nav-background-color: $accessible-600 !default;
+// /*  $form-select-bg: $accessible-500 !default;*/
+$card-dashboard-bg-color: $accessible-700 !default;
+$body-wrapper-bg: $accessible-600 !default;
+$sidbar-border-right-color: #1a0339;
+$wrapper-bg: $accessible-600 !default;
+
+$dropdown-border-bottom: $accessible-500 !default;
+$dropdown-bg-color: $accessible-400 !default;
+$dropdown-border-bottom-hover: $accessible-200 !default;
+$dropdown-bghover-color: $accessible-300 !default;
+$dropdown-link-active-bg: $accessible-500 !default;
+
+$offcanvasbg: $accessible-700 !default;
+
+$footer-bgcolor: $accessible-700 !default;
+
+$nav-tab-bg-active: $accessible-600 !default;
+$profileMenuBgColor: $nav-tab-bg-active !default;
+$trhoverbg-color: $accessible-600;
+
+$nav-a-color: $white !default;
+$nav-active-color: $white !default;
+
+$primary: #28c76f;
+
+$datepicker-bg: $accessible-600 !default;
+$datepicker-head: $accessible-600 !default;
+
+$link-color: $primary;
+
+#sidebar ul li a.active.child {
+  background-color: none;
+}
+
+.form-control {
+  background-color: $accessible-300;
+  border: 1px solid $accessible-400;
+}
 
 html[theme="dark"] {
-  --chart-doughnut-text-color: #fff;
-  $input-bg: $dark-200 !default;
-  $input-bg-border: $dark-100 !default;
-
   $dropdown-color: $white;
+
+  $input-bg: $accessible-300 !default;
+  $input-bg-border: $accessible-400 !default;
+
+  $notification-header-bg: $accessible-500 !default;
   $input-group-addon-bg: $input-bg;
+  $input-group-addon-border-color: $accessible-400 !default;
 
   .form-control,
   .form-control:focus {
     background-color: $input-bg;
-    border: 1px solid $input-bg-border;
+    border: 1px solid $accessible-400;
     color: $white;
+  }
+
+  .form-group.has-search {
+    .form-control {
+      background-color: $input-bg;
+    }
   }
 
   .dropdown-menu {
@@ -185,12 +219,16 @@ html[theme="dark"] {
 
   .input-group-text {
     background-color: $input-group-addon-bg;
-    border-color: $input-bg-border;
+    border-color: $input-group-addon-border-color;
+  }
+
+  .notification-header {
+    background-color: $notification-header-bg;
   }
 }
 
 @import "./custom.scss";
-@import "./node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./accordion.scss";
 @import "./alert.scss";
 @import "./avatar.scss";
@@ -216,6 +254,5 @@ html[theme="dark"] {
 @import "./tags.scss";
 @import "./textarea.scss";
 @import "./colorvariables.scss";
-@import "./toast.scss";
 @import "./cookieconsent.scss";
 @import "./calender.scss";

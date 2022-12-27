@@ -1,5 +1,6 @@
-$theme: "green" !default;
+$theme: "accessible" !default;
 
+$primary: #7e2eef;
 $secondary: #2b0066;
 $success: #2eef59;
 $info: #3ef1e8;
@@ -112,6 +113,31 @@ $default-100: #f58220;
 
 // /*Chart color variables*/
 :root {
+  --chart-bool-color1: #23054e;
+  --chart-bool-color2: #78f7b8;
+  --chart-bool-color2: #f76161;
+  --chart-bubble-color1: #fa896b;
+  --chart-bubble-color2: #78f7b8;
+  --chart-area-color1: #fa896b;
+  --chart-area-color2: #78f7b8;
+  --chart-doughnut-color1: #23054e;
+  --chart-doughnut-color2: #efad07;
+  --chart-doughnut-color3: #ff6e48;
+  --chart-doughnut-color4: #8000b9;
+  --chart-doughnut-text-color: rgba(146, 7, 42);
+  --chart-bar-horizontal-color1: #78f7b8;
+  --chart-bar-horizontal-color2: #78f7b8;
+  --chart-bar-horizontal-color: rgba(255, 29, 177, 0);
+  --chart-bar-horizontal-border-color: rgba(255, 29, 177);
+  --chart-line-color1: rgba(250, 137, 107, 0);
+  --chart-line-color2: rgba(63, 28, 255, 0);
+  --chart-line-color3: rgba(0, 255, 255, 0);
+  --chart-line-border-color1: rgba(250, 137, 107);
+  --chart-line-border-color2: rgba(56, 25, 226);
+  --chart-line-border-color3: rgba(0, 255, 255);
+  --chart-line-point-color1: rgba(250, 137, 107);
+  --chart-line-point-color2: rgba(56, 25, 226);
+  --chart-line-point-color3: rgba(0, 255, 255);
   --chartColor1: #01ae9d;
   --chartColor2: #ebeefb;
   --chartColor3: #edb371;
@@ -138,79 +164,68 @@ $accessible-200: #322d4a;
 $accessible-300: #3a3d5a;
 $accessible-400: #474c74;
 $accessible-500: #4400a4;
-$accessible-600: #282a42;
-$accessible-700: #30334e;
+$accessible-600: #23054e;
+$accessible-700: #13022e;
 $accessible-800: #13002e;
 
-$form-select-bg: $accessible-300 !default;
-$form-select-border-color: $accessible-400 !default;
+$input-select-bg: $accessible-300 !default;
+$form-select-bg: $accessible-500 !default;
+$card-bg-color: $accessible-700 !default;
+$card-darkborder-color: $accessible-600 !default;
+$form-select-bgColor: $accessible-500 !default;
 //$offcanvas-border-color: $accessible-300 !default;
 $offcanvas-bottom-border-color: $accessible-300 !default;
 $nav-tabs-bottom-border-color: $accessible-300 !default;
-//$nav-tabs-border-color: $accessible-300 !default;
-$card-bg-color: $accessible-700 !default;
 
-$nav-background-color: $accessible-600 !default;
-// /*  $form-select-bg: $accessible-500 !default;*/
-$card-dashboard-bg-color: $accessible-700 !default;
-$body-wrapper-bg: $accessible-600 !default;
-$sidbar-border-right-color: #1a0339;
-$wrapper-bg: $accessible-600 !default;
-
+$nav-tabs-border-color: $accessible-300 !default;
 $dropdown-border-bottom: $accessible-500 !default;
 $dropdown-bg-color: $accessible-400 !default;
 $dropdown-border-bottom-hover: $accessible-200 !default;
 $dropdown-bghover-color: $accessible-300 !default;
 $dropdown-link-active-bg: $accessible-500 !default;
 
+$datepicker-bg: $accessible-600 !default;
+$datepicker-head: $accessible-600 !default;
+$nav-background-color: $accessible-500 !default;
+// /*  $form-select-bg: $accessible-500 !default;*/
+$card-dashboard-bg-color: $accessible-700 !default;
+$body-wrapper-bg: $accessible-800 !default;
+$sidbar-border-right-color: #1a0339;
+$wrapper-bg: $accessible-600 !default;
+
 $offcanvasbg: $accessible-700 !default;
 
 $footer-bgcolor: $accessible-700 !default;
 
-$nav-tab-bg-active: $accessible-600 !default;
-$profileMenuBgColor: $nav-tab-bg-active !default;
-$trhoverbg-color: $accessible-600;
+  $nav-tab-bg-active: $accessible-600 !default;
+  $profileMenuBgColor: $nav-tab-bg-active !default;
+  $trhoverbg-color: $accessible-600;
+  $file-uploder-multiple-bg : $input-select-bg !default;
+  $profile-upload-icon: $accessible-400 !default;
+  $datatable-bgColor : $accessible-700 !default;
 
-$nav-a-color: $white !default;
-$nav-active-color: $white !default;
-
-$primary: #28c76f;
-
-$datepicker-bg: $accessible-600 !default;
-$datepicker-head: $accessible-600 !default;
-
-$link-color: $primary;
-
-#sidebar ul li a.active.child {
-  background-color: none;
-}
-
-.form-control {
-  background-color: $accessible-300;
-  border: 1px solid $accessible-400;
-}
-
+//$body-wrapper-bg:;
 html[theme="dark"] {
+  $card-darkborder-color: $card-bg-color !default;
+  $profile-upload-icon: $accessible-600 !default;
   $dropdown-color: $white;
-
   $input-bg: $accessible-300 !default;
+  $file-uploder-multiple-bg: $input-select-bg !default;
   $input-bg-border: $accessible-400 !default;
-
+  $form-select-border-color: $input-bg-border !default;
   $notification-header-bg: $accessible-500 !default;
   $input-group-addon-bg: $input-bg;
   $input-group-addon-border-color: $accessible-400 !default;
+
+  .file-uploader-multi {
+    background-color: $file-uploder-multiple-bg;
+  }
 
   .form-control,
   .form-control:focus {
     background-color: $input-bg;
     border: 1px solid $accessible-400;
     color: $white;
-  }
-
-  .form-group.has-search {
-    .form-control {
-      background-color: $input-bg;
-    }
   }
 
   .dropdown-menu {
@@ -222,13 +237,40 @@ html[theme="dark"] {
     border-color: $input-group-addon-border-color;
   }
 
+  .form-select[size]:not([size="1"]) {
+    background-color: $input-bg;
+  }
+
   .notification-header {
     background-color: $notification-header-bg;
   }
 }
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    #sortTable thead th:first-child,
+    #sortTable tbody td:first-child {
+        background-color: $datatable-bgColor;
+    }
+}
 
+@media screen and (max-width:768px) {
+    #sortTable thead th:first-child,
+    #sortTable tbody td:first-child {
+        background-color: $datatable-bgColor;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #sortTable thead th:first-child,
+    #sortTable tbody td:first-child {
+        position: sticky;
+        left: -1px;
+        background: $datatable-bgColor;
+        z-index: 1;
+        max-width: 190px;
+    }
+}
 @import "./custom.scss";
-@import "./node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./accordion.scss";
 @import "./alert.scss";
 @import "./avatar.scss";
