@@ -1,8 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RdsThemesService } from './rds-themes.service';
 
-
-describe('LibThemeService', () => {
+describe('RdsThemeService', () => {
   let service: RdsThemesService;
 
   beforeEach(() => {

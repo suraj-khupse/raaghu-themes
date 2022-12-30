@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RdsThemesComponent } from './rds-themes.component';
 
-describe('LibThemeComponent', () => {
+describe('RdsThemeComponent', () => {
   let component: RdsThemesComponent;
   let fixture: ComponentFixture<RdsThemesComponent>;
 
