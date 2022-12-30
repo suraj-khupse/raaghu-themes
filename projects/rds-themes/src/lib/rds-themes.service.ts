@@ -1,12 +1,11 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class RdsThemesService implements OnInit {
+export class RdsThemesService  {
 
   public static defaultThemeMode = 'light';
-  // public readonly style: HTMLLinkElement;
 
   public get selectedThemeMode(): string {
     return RdsThemesService.defaultThemeMode;
@@ -17,20 +16,21 @@ export class RdsThemesService implements OnInit {
     this.style.href = `./styles/${value}.scss`;
   }
 
-  constructor(
-    public style: HTMLLinkElement
-  ) { }
+  private readonly style: HTMLLinkElement;
 
-  ngOnInit() {
+  constructor(   
+  ) {
     this.style = document.createElement('link');
     this.style.rel = 'stylesheet';
-    this.style.href = `./styles/${this.selectedThemeMode}.scss`;
-    document.head.appendChild(this.style);
-  }
+    // if(RdsThemesService.defaultThemeMode!==undefined){
+    //   this.style.href = `./styles/${this.selectedThemeMode}.scss`;
+    // } 
+   }
 
+ 
 
-  setThemeMode(name: any) {
-    RdsThemesService.defaultThemeMode = name;
+  set setThemeMode(name: any) {
+    // RdsThemesService.defaultThemeMode = name;
     document.documentElement.setAttribute('theme', name);
   }
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LibThemeComponent } from './rds-themes.component';
+import { RdsThemesComponent } from './rds-themes.component';
 
 describe('LibThemeComponent', () => {
-  let component: LibThemeComponent;
-  let fixture: ComponentFixture<LibThemeComponent>;
+  let component: RdsThemesComponent;
+  let fixture: ComponentFixture<RdsThemesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LibThemeComponent ]
+      declarations: [ RdsThemesComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LibThemeComponent);
+    fixture = TestBed.createComponent(RdsThemesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

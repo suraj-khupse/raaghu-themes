@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
+import { RdsThemesService } from './rds-themes.service';
 
-import { LibThemeService } from './rds-themes.service';
 
 describe('LibThemeService', () => {
-  let service: LibThemeService;
+  let service: RdsThemesService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(LibThemeService);
+    service = TestBed.inject(RdsThemesService);
   });
 
   it('should be created', () => {
