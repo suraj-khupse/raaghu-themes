@@ -10,4 +10,4 @@ import { RdsThemesComponent } from './rds-themes.component';
     RdsThemesComponent
   ]
 })
-export class LibThemeModule { }
+export class RdsThemesModule { }

@@ -29,25 +29,29 @@ export class RdsThemesService implements OnInit {
     this.style = document.createElement('link');
     this.style.rel = 'stylesheet';
     document.head.appendChild(this.style);
+    console.log("Themes constructor: ", this.selectedTheme, this.selectedThemeMode);
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     if (this.selectedTheme !== undefined) {
       this.style.href = `./styles/${this.selectedTheme}.scss`;
     }
     document.documentElement.setAttribute('theme', this.selectedThemeMode);
+    console.log("Themes ngOnInit: ", this.selectedTheme, this.selectedThemeMode);
   }
 
-  set setThemeMode(mode: any) {
+  public setThemeMode(mode: any): void {
     this.selectedThemeMode = mode;
     document.documentElement.setAttribute('theme', mode);
+    console.log("Themes setThemeMode: ", this.selectedTheme, this.selectedThemeMode);
   }
 
-  set setTheme(theme: string) {
+  public setTheme(theme: string): void {
     this.selectedTheme = theme;
     if (this.selectedTheme !== undefined) {
       this.style.href = `./styles/${this.selectedTheme}.scss`;
     }
+    console.log("Themes setTheme: ", this.selectedTheme, this.selectedThemeMode);
   }
 
 }
