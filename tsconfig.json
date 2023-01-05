@@ -12,6 +12,9 @@
     "paths": {
       "rds-themes": [
         "dist/rds-themes"
+      ],
+      "rds-icon":[
+        "dist/rds-icon"
       ]
     },
     "noFallthroughCasesInSwitch": true,

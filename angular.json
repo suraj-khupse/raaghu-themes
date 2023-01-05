@@ -28,14 +28,45 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/rds-themes/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "inlineStyleLanguage": "scss"
+          }
+        },
+        "rds-icon": {
+          "projectType": "library",
+          "root": "projects/rds-icon",
+          "sourceRoot": "projects/rds-icon/src",
+          "prefix": "lib",
+          "architect": {
+            "build": {
+              "builder": "@angular-devkit/build-angular:ng-packagr",
+              "options": {
+                "project": "projects/rds-icon/ng-package.json"
+              },
+              "configurations": {
+                "production": {
+                  "tsConfig": "projects/rds-icon/tsconfig.lib.prod.json"
+                },
+                "development": {
+                  "tsConfig": "projects/rds-icon/tsconfig.lib.json"
+                }
+              },
+              "defaultConfiguration": "production"
+            },
+            "test": {
+              "builder": "@angular-devkit/build-angular:karma",
+              "options": {
+                "main": "projects/rds-icon/src/test.ts",
+                "tsConfig": "projects/rds-icon/tsconfig.spec.json",
+                "karmaConfig": "projects/rds-icon/karma.conf.js"
+              }
+            }
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c1fb7bc3-a833-422d-81af-b50f1810853e"
   }
 }
