@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RdsIconService } from './rds-icon.service';
+import { RdsIconsService } from './rds-icons.service';
 
-describe('RdsIconService', () => {
-  let service: RdsIconService;
+describe('RdsIconsService', () => {
+  let service: RdsIconsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RdsIconService);
+    service = TestBed.inject(RdsIconsService);
   });
 
   it('should be created', () => {

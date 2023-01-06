@@ -37,23 +37,23 @@
         }
       }
     },
-    "rds-icon": {
+    "rds-icons": {
       "projectType": "library",
-      "root": "projects/rds-icon",
-      "sourceRoot": "projects/rds-icon/src",
+      "root": "projects/rds-icons",
+      "sourceRoot": "projects/rds-icons/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/rds-icon/ng-package.json"
+            "project": "projects/rds-icons/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/rds-icon/tsconfig.lib.prod.json"
+              "tsConfig": "projects/rds-icons/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/rds-icon/tsconfig.lib.json"
+              "tsConfig": "projects/rds-icons/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -61,9 +61,12 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/rds-icon/src/test.ts",
-            "tsConfig": "projects/rds-icon/tsconfig.spec.json",
-            "karmaConfig": "projects/rds-icon/karma.conf.js"
+            "tsConfig": "projects/rds-icons/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "inlineStyleLanguage": "scss"
           }
         }
       }

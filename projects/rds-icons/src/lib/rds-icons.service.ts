@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class RdsIconService {
+export class RdsIconsService {
 
   constructor(private http: HttpClient) { }
 

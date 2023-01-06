@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RdsIconComponent } from './rds-icon.component';
+import { RdsIconsComponent } from './rds-icons.component';
 
-describe('RdsIconComponent', () => {
-  let component: RdsIconComponent;
-  let fixture: ComponentFixture<RdsIconComponent>;
+describe('RdsIconsComponent', () => {
+  let component: RdsIconsComponent;
+  let fixture: ComponentFixture<RdsIconsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RdsIconComponent ]
+      declarations: [ RdsIconsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RdsIconComponent);
+    fixture = TestBed.createComponent(RdsIconsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

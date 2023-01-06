@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RdsIconComponent } from './rds-icon.component';
+import { RdsIconsComponent } from './rds-icons.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    RdsIconComponent
+    RdsIconsComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule
   ],
   exports: [
-    RdsIconComponent
+    RdsIconsComponent
   ]
 })
 export class RdsIconModule { }

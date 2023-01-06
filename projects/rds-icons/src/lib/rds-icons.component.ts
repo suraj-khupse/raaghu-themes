@@ -5,12 +5,12 @@ import { Flags } from './flag-icons';
 
 @Component({
   selector: 'rds-icon',
-  templateUrl: './rds-icon.component.html',
-  styleUrls: ['./rds-icon.component.scss'],
+  templateUrl: './rds-icons.component.html',
+  styleUrls: ['./rds-icons.component.scss'],
 })
-export class RdsIconComponent implements OnInit, OnChanges {
+export class RdsIconsComponent implements OnInit, OnChanges {
   private svgIcon!: SVGElement;
-  title = 'rds-icon';
+  title = 'rds-icons';
   @Input() height: string = '';
   // @Input() disabled: boolean | undefined = false;
   @Input() fill: boolean | undefined = false;

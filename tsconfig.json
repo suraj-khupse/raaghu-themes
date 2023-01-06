@@ -10,11 +10,11 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "rds-themes": [
+      "raaghu-themes/rds-themes": [
         "dist/rds-themes"
       ],
-      "rds-icon":[
-        "dist/rds-icon"
+      "raaghu-themes/rds-icons": [
+        "dist/rds-icons"
       ]
     },
     "noFallthroughCasesInSwitch": true,

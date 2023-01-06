@@ -31,6 +31,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-all": "node build-all",
+    "publish": "npm publish --dist ./dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
