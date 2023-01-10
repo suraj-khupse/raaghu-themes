@@ -219,6 +219,11 @@ $nav-tabs-bottom-border-color: $light-100 !default;
 
 $file-uploder-multiple-bg: $input-bg !default;
 
+
+$toast-color-scale: 40% !default;
+$toast-bg-scale: -80% !default;
+$toast-border-scale: -70% !default;
+
 //datatable-first-child-bgcolor
 $datatable-bgColor: $white !default;
 .ngx-shimmer {
@@ -1301,7 +1306,58 @@ $form-feedback-color: $gray-700;
     }
   }
 }
+@mixin toast-variant($background, $border, $color) {
+  color: $color;
+}
 
+@each $state, $value in $theme-colors {
+  $toast-background: shift-color($value, $toast-bg-scale);
+  $toast-border: shift-color($value, $toast-border-scale);
+  $toast-color: shift-color($value, $toast-color-scale);
+
+  @if (contrast-ratio($toast-background, $toast-color) < $min-contrast-ratio) {
+    $toast-color: mix($value, color-contrast($toast-background), abs($toast-color-scale));
+  }
+
+  @each $color, $value in $theme-colors {
+    .toast-#{$color} {
+      svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: $toast-color;
+
+        polyline.icon {
+          stroke: $toast-color;
+        }
+
+        polygon.icon {
+          stroke: $toast-color;
+        }
+
+        ellipse.icon {
+          stroke: $toast-color;
+        }
+
+        path.icon {
+          stroke: $toast-color;
+        }
+
+        line.icon {
+          stroke: $toast-color;
+        }
+
+        rect.icon {
+          stroke: $toast-color;
+        }
+
+        circle.icon {
+          stroke: $toast-color;
+        }
+      }
+    }
+  }
+}
 @mixin alert-variant($background, $border, $color) {
   color: $color;
 }
@@ -2261,3 +2317,9 @@ html #sidebar ul li a.active small {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+.breadcrumb-item.active {
+  color: $primary;
+}
+.scrolltotop {
+    background-color:$white;
+    }
