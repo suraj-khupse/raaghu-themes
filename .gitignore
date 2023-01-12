@@ -22,6 +22,14 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
+# SDK output
+/.vs
+/.vscode
+/.angular
+
+# Visual Studio
+.vs/*
+
 # Visual Studio Code
 .vscode/*
 !.vscode/settings.json
