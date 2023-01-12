@@ -1,10 +1,11 @@
 {
   "name": "raaghu-themes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "author": "WAI Technologies Pvt. Ltd. <contactus@waiin.com>",
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli)",
   "sideEffects": false,
+  "private": false,
   "publishConfig": {
     "@alok-nakhate:registry": "https://npm.pkg.github.com",
     "tag": "latest"
@@ -35,7 +36,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": false,
   "dependencies": {
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
