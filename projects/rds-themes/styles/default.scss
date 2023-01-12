@@ -190,8 +190,8 @@ html[theme="dark"] {
 }
 
 @import "./custom.scss";
+@import "bootstrap/scss/bootstrap";
 @import "./responsive.scss";
-@import "./cookieconsent.scss";
 @import "./accordion.scss";
 @import "./alert.scss";
 @import "./avatar.scss";
@@ -218,6 +218,6 @@ html[theme="dark"] {
 @import "./textarea.scss";
 @import "./colorvariables.scss";
 @import "./toast.scss";
+@import "./cookieconsent.scss";
 @import "./calender.scss";
-@import "~bootstrap/scss/bootstrap.scss";
 @import "./quillEditor.scss";
