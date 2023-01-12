@@ -1,4 +1,4 @@
-@import "cookieconsent/build/cookieconsent.min";
+@import "~cookieconsent/build/cookieconsent.min.css";
 
 .cc-allow {
     background-color: $primary !important;
@@ -14,12 +14,12 @@
 // .cc-window.cc-floating {
 //     max-width: 100%;
 // }
-@media (max-width: 767px){
-.cc-window.cc-banner {
-    width: 100%;
-}
-.cc-window.cc-floating {
-   width: 100%;
-   max-width: 100%;
-}
+@media (max-width: 767px) {
+    .cc-window.cc-banner {
+        width: 100%;
+    }
+    .cc-window.cc-floating {
+        width: 100%;
+        max-width: 100%;
+    }
 }
