@@ -5,11 +5,13 @@
   "lib": {
     "entryFile": "src/public-api.ts",
     "styleIncludePaths": [
-      "./styles/*.*"
+      "./styles/*.*",
+      "./styles/fonts/*.*"
     ]
   },
   "assets": [
-    "./styles/*.*"
+    "./styles/*.*",
+    "./styles/fonts/*.*"
   ],
   "allowedNonPeerDependencies": [
     "bootstrap",
