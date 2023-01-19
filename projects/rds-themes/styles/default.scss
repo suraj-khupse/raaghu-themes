@@ -112,42 +112,8 @@ $dark-800: #151515;
 $dark-900: #141414;
 $default-100: #f58220;
 
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins"), url("./fonts/Poppins-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Poppins-SemiBold";
-  src: local("Poppins-SemiBold"), url("./fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Poppins-Bold";
-  src: local("Poppins-Bold"), url("./fonts/Poppins-Bold.ttf") format("truetype");
-  font-weight: bolder;
-}
-
-@font-face {
-  font-family: "Poppins-Light";
-  src: local("Poppins-Light"), url("./fonts/Poppins-Light.ttf") format("truetype");
-  font-weight: lighter;
-}
-
-@font-face {
-  font-family: "Poppins-Medium";
-  src: local("Poppins-Medium"), url("./fonts/Poppins-Medium.ttf") format("truetype");
-  font-weight: normal;
-}
-
 // /*Chart color variables*/
 :root {
-  --bs-font-sans-serif: "Poppins", sans-serif;
-  --bs-font-monospace: "Fira Code", monospace;
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-datepicker-zindex: 1046;
   --chart-bool-color1: #e30707;
   --chart-bool-color2: #ebeefb;
   --chart-bubble-color1: #fa896b;
