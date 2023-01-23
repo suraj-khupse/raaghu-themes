@@ -78,7 +78,8 @@ $accordio-border-width: $border-width;
 
 $font-size-base: 0.875rem !default;
 // Assumes the browser default, typically `16px`
-$font-weight-lighter: lighter !default;
+$font-weight-thin: 100 !default;
+$font-weight-lighter: 200 !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-medium: 500 !default;

@@ -3,10 +3,18 @@
     box-shadow: none;
   }
 }
+
 input::-webkit-input-placeholder {
   font-size: $font-size-sm;
-  font-weight: $input-font-weight;
+  font-weight: $font-weight-thin;
 }
+
 .form-select {
+  font-size: $font-size-sm;
+}
+
+.form-control-feedback {
+  min-height: 18px;
+  text-align: end;
   font-size: $font-size-sm;
 }
