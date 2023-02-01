@@ -1070,9 +1070,9 @@ $form-feedback-color: $gray-700;
 }
 
 .table {
-  > :not(caption) > * > * {
-    background-color: inherit;
-  }
+  // > :not(caption) > * > * {
+  //   background-color: inherit;
+  // }
 
   > thead {
     background-color: var(--bs-table-bg);
@@ -1709,6 +1709,11 @@ $form-feedback-color: $gray-700;
     background-color: $white;
   }
 }
+
+.table-border > :not(caption) > * > * {
+  border-width: 0 1px;
+  border-bottom-width: 1px;
+ }
 
 .HighRate {
   color: $high-rate-color;
