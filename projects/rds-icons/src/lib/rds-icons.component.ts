@@ -10,7 +10,7 @@ import { Flags } from './flag-icons';
 })
 export class RdsIconsComponent implements OnInit, OnChanges {
   private svgIcon!: SVGElement;
-  title = 'rds-icons';
+  title = 'rds-icon';
   @Input() height: string = '';
   // @Input() disabled: boolean | undefined = false;
   @Input() fill: boolean | undefined = false;

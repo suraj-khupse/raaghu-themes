@@ -1,36 +1,43 @@
-$partial: "./fonts/Poppins-Regular.ttf";
-@if import-exists($partial) {
+$partial_node: "~raaghu-themes/rds-themes/styles/fonts/Poppins-Regular.ttf";
+$path: "./fonts/";
+
+@if import-exists($partial_node) {
+  $path: "~raaghu-themes/rds-themes/styles/fonts/";
+} @else {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+  $path: "";
+}
+
+@if $path != "" {
   @font-face {
     font-family: "Poppins";
-    src: local("Poppins"), url("./fonts/Poppins-Regular.ttf") format("truetype");
+    src: local("Poppins"), url($path + "Poppins-Regular.ttf") format("truetype");
     font-weight: normal;
   }
 
   @font-face {
     font-family: "Poppins-SemiBold";
-    src: local("Poppins-SemiBold"), url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+    src: local("Poppins-SemiBold"), url($path + "Poppins-SemiBold.ttf") format("truetype");
     font-weight: bold;
   }
 
   @font-face {
     font-family: "Poppins-Bold";
-    src: local("Poppins-Bold"), url("./fonts/Poppins-Bold.ttf") format("truetype");
+    src: local("Poppins-Bold"), url($path + "Poppins-Bold.ttf") format("truetype");
     font-weight: bolder;
   }
 
   @font-face {
     font-family: "Poppins-Light";
-    src: local("Poppins-Light"), url("./fonts/Poppins-Light.ttf") format("truetype");
+    src: local("Poppins-Light"), url($path + "Poppins-Light.ttf") format("truetype");
     font-weight: lighter;
   }
 
   @font-face {
     font-family: "Poppins-Medium";
-    src: local("Poppins-Medium"), url("./fonts/Poppins-Medium.ttf") format("truetype");
+    src: local("Poppins-Medium"), url($path + "Poppins-Medium.ttf") format("truetype");
     font-weight: normal;
   }
-} @else {
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 }
 
 :root {
