@@ -110,7 +110,7 @@ $pagination-bg-color: $white;
 $page-link-bg-hover: $gray-800;
 $pagination-bg-hover-color: $gray-100;
 $pagination-bg-active-color: $gray-200;
-$page-link-active-color: $gray-600;
+$page-link-active-color: $primary;
 $pagination-item-bg-active: $gray-800;
 
 // /*dropdown Variales */
@@ -648,8 +648,8 @@ svg {
   }
 
   .active .page-link {
-    color: $page-link-active-color;
-    background-color: $pagination-bg-active-color;
+    color:$pagination-bg-color;
+    background-color:$page-link-active-color;
   }
 }
 
