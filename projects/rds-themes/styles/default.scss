@@ -224,17 +224,18 @@ html[theme="dark"] {
 @import "./toggle.scss";
 
 
+
 .password-toggle {
-  position: absolute!important;
-  top: 50%!important;
-  right: 10px!important;
-  transform: translateY(-50%)!important;
-  display: flex!important;
-  align-items: center!important;
-  justify-content: center!important;
-  width: 30px!important;
-  height: 30px!important;
-  cursor: pointer!important;
-  border: none!important;
-  background-color: transparent!important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  cursor: pointer !important;
+  border: none !important;
+  background-color: transparent !important;
 }
