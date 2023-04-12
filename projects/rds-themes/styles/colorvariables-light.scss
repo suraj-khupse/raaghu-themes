@@ -404,10 +404,19 @@ svg {
   }
 }
 
+// .aside {
+//   background-color: $body-wrapper-bg;
+//   border-right-color: $sidbar-border-right-color;
+// }
 .aside {
-  background-color: $body-wrapper-bg;
+  background-color: #fff;
   border-right-color: $sidbar-border-right-color;
 }
+.sidebar {
+  background-color: #fff !important;
+  border-right-color: $sidbar-border-right-color;
+}
+
 
 .navbar {
   .nav-link {
@@ -415,9 +424,9 @@ svg {
   }
 }
 
-#sidebar {
-  background-color: $body-wrapper-bg;
-}
+// #sidebar {
+//   background-color: $body-wrapper-bg;
+// }
 
 .upload-icon {
   background-color: $white;
@@ -1020,7 +1029,7 @@ a {
 }
 
 #sidebar {
-  background-color: $body-wrapper-bg;
+  background-color: $light;
   border-right-color: $sidbar-border-right-color;
 }
 // /*carousel style*/
@@ -1652,7 +1661,7 @@ html #sidebar ul li a.active small {
 }
 
 #sidebar {
-  background-color: $body-wrapper-bg;
+  background-color: $light;
   border-right-color: $sidbar-border-right-color;
 }
 // /*carousel style*/
