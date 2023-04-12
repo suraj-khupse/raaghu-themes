@@ -112,7 +112,7 @@
 }
 
 .sidebar .feat-show {
-  transition: all 0.5s;
+  transition: all 1s ease-in-out;
 }
 .sidenav-footer {
   position: absolute;
@@ -123,4 +123,9 @@
   // height: 100px;
   // padding: 2%;
   right: 0;
+}
+
+.toggle-sidebar-menu .collpase-button svg{
+  transform: rotate(180deg);
+  transition: all 1s ease-in-out;
 }
