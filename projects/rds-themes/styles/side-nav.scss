@@ -24,8 +24,8 @@
 }
 
 #sidebar.toggle {
-  min-width: 80px;
-  max-width: 80px;
+  min-width: 45px;
+  max-width: 45px;
   // text-align: center;
 }
 
@@ -117,15 +117,23 @@
 .sidenav-footer {
   position: absolute;
   // left: -15px;
-  top: 0;
+  // top: 0;
+  bottom: 49%;
   // width: 275px;
   z-index: 99;
   // height: 100px;
   // padding: 2%;
-  right: 0;
+  right: -31;
 }
 
 .toggle-sidebar-menu .collpase-button svg{
   transform: rotate(180deg);
   transition: all 1s ease-in-out;
+}
+
+.sidenav-logo{
+  position:absolute;
+  top: 5px;
+  left: 2px;
+ height: 43px;
 }
