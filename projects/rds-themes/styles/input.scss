@@ -54,3 +54,7 @@ input::-webkit-input-placeholder {
   border: none !important;
   background-color: transparent !important;
 }
+
+.input-group > .form-control:focus {
+  z-index: 0;
+}
