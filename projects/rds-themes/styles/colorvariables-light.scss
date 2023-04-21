@@ -1005,6 +1005,52 @@ a {
           }
         }
       }
+      a:hover {
+        color: $nav-active-color;
+        // transition: all 0.3s linear;
+        // transform: scale(1.5);
+
+        svg {
+          width: 22px;
+          height: 22px;
+          fill: none;
+          stroke: $primary;
+          transition: all 0.6s linear;
+          transform: scale(1.2);
+
+          polyline.icon {
+            stroke: $primary;
+          }
+
+          polygon.icon {
+            stroke: $primary;
+          }
+
+          ellipse.icon {
+            stroke: $primary;
+          }
+
+          path.icon {
+            stroke: $primary;
+          }
+
+          line.icon {
+            stroke: $primary;
+          }
+
+          rect.icon {
+            stroke: $primary;
+          }
+
+          circle.icon {
+            stroke: $primary;
+          }
+
+          ellipse.icon {
+            stroke: $primary;
+          }
+        }
+      }
     }
 
     li.active {
