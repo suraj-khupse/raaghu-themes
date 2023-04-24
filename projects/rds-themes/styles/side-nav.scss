@@ -14,11 +14,11 @@
   height: 20px;
   transition: transform 0.35s ease;
   transform-origin: 0.5em 50%;
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 .bd-links .child[aria-expanded="true"]::after {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
   position: absolute;
   right: 0;
 }
