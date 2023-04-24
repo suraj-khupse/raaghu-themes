@@ -18,3 +18,43 @@ input::-webkit-input-placeholder {
   text-align: end;
   font-size: $font-size-sm;
 }
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+input::-webkit-input-placeholder {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-thin;
+}
+
+.form-select {
+  font-size: $font-size-sm;
+}
+
+.form-control-feedback {
+  min-height: 20px;
+  text-align: end;
+  font-size: $font-size-sm;
+}
+
+.password-toggle {
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  cursor: pointer !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.input-group > .form-control:focus {
+  z-index: 0;
+}
