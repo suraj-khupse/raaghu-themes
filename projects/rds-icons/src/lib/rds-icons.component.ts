@@ -119,9 +119,9 @@ export class RdsIconsComponent implements OnInit, OnChanges {
     } else {
       svg.style.stroke = 'none';
     }
-    if(this.isAnimate){
-      svg.classList.add("jiggle");
-    }
+    //if(this.isAnimate){
+     // svg.classList.add("jiggle");
+   // }
     // if (this.color) {
     //   const paths = svg.querySelectorAll('[stroke]');
     //   for et i = 0; i < paths.length; i++) {
