@@ -1507,6 +1507,7 @@ html #sidebar ul li a.active small {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  opacity: 0.5;
 }
 
 @mixin icon-variant($color) {
