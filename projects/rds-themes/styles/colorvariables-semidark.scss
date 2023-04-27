@@ -137,8 +137,8 @@ $form-feedback-color: $gray-200 !default;
 // /*sidebar color styles*/
 $nav-ul-bg-color: $light;
 $nav-li-border: $white;
-$nav-a-color: $gray-600;
-$nav-a-color-hover: $gray-900;
+$nav-a-color: $gray-400;
+$nav-a-color-hover: $dark-900;
 $nav-active-color: $primary;
 $sidbar-border-right-color: $gray-200;
 
@@ -405,12 +405,7 @@ svg {
 //   border-right-color: $sidbar-border-right-color;
 // }
 .aside {
-  background-color: #fff;
-  border-right-color: $sidbar-border-right-color;
-}
-
-.sidebar {
-  background-color: #fff !important;
+  background-color: $dark-400;
   border-right-color: $sidbar-border-right-color;
 }
 
@@ -906,8 +901,6 @@ a {
 // /*sidebar color styles*/
 #sidebar {
   ul {
-    //background: $nav-ul-bg-color;
-
     li {
       border-top-color: $nav-li-border;
 
@@ -920,41 +913,39 @@ a {
         border-left-color: transparent;
 
         svg {
-          width: 22px;
-          height: 22px;
           fill: none;
-          stroke: $gray-700;
+          stroke: $light-200;
 
           polyline.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
 
           polygon.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
 
           ellipse.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
 
           path.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
 
           line.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
 
           rect.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
 
           circle.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
 
           ellipse.icon {
-            stroke: $gray-700;
+            stroke: $light-200;
           }
         }
       }
@@ -962,58 +953,14 @@ a {
       a.active {
         color: $nav-active-color;
 
-        svg {
-          width: 22px;
-          height: 22px;
-          fill: none;
-          stroke: $primary;
-
-          polyline.icon {
-            stroke: $primary;
-          }
-
-          polygon.icon {
-            stroke: $primary;
-          }
-
-          ellipse.icon {
-            stroke: $primary;
-          }
-
-          path.icon {
-            stroke: $primary;
-          }
-
-          line.icon {
-            stroke: $primary;
-          }
-
-          rect.icon {
-            stroke: $primary;
-          }
-
-          circle.icon {
-            stroke: $primary;
-          }
-
-          ellipse.icon {
-            stroke: $primary;
-          }
+        small {
+          color: $nav-active-color;
+          font-weight: 500;
         }
-      }
-
-      a:hover {
-        color: $nav-active-color;
-        // transition: all 0.3s linear;
-        // transform: scale(1.5);
 
         svg {
-          width: 22px;
-          height: 22px;
           fill: none;
           stroke: $primary;
-          transition: all 0.6s linear;
-          transform: scale(1.2);
 
           polyline.icon {
             stroke: $primary;
@@ -1437,7 +1384,7 @@ $form-feedback-color: $gray-700;
 }
 
 html #sidebar ul li a.active small {
-  color: #212529;
+  color: $white;
 }
 
 .theam-cards .selected {
@@ -1460,13 +1407,14 @@ html #sidebar ul li a.active small {
 }
 
 .bd-links .child::after {
-  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e ");
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e ");
   //content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='$current' stroke='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
   width: 20px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  opacity: 0.5;
 }
 
 @mixin icon-variant($color) {
@@ -1668,7 +1616,7 @@ html #sidebar ul li a.active small {
 }
 
 #sidebar {
-  background-color: $light;
+  background-color: $dark-400;
   border-right-color: $sidbar-border-right-color;
 }
 // /*carousel style*/
@@ -1869,10 +1817,6 @@ html #sidebar ul li a.active small {
   border-color: #9bacbc;
   background: #eaeff5;
   color: #3d4d60;
-}
-
-.bd-links .child::after {
-  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e ");
 }
 
 @mixin icon-variant($color) {
