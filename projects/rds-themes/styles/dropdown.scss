@@ -2,11 +2,17 @@
 .dropdown-item {
   cursor: pointer;
 }
-
 .dropdown-menu {
+  --bs-dropdown-min-width: 8rem;
   padding: 0 0;
 }
-
+.multi-level-drop >.dropdown-menu{
+  --bs-dropdown-link-hover-bg: white;
+}
+.multi-level-drop >.dropdown-menu > .active{
+  background-color:#E9ECEF;
+   --bs-dropdown-link-hover-bg: #E9ECEF;
+}
 .dropdown {
   display: inline-block;
   position: relative;
@@ -46,3 +52,30 @@
 .dropdown ul {
   width: 100%;
 }
+.multi-dropp{
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-left: 144px;
+}
+.Charts{
+  margin-top: 29px;
+}
+.Components{
+  margin-top: 52px
+}
+
+.multi-drop{
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-left: 144px;
+}
+.submenu-li:hover{
+  background-color: #E9ECEF;
+}
+
