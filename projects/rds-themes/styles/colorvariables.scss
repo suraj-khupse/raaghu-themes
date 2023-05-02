@@ -26,3 +26,8 @@ html[theme=dark] {
   --bs-body-color: #dee2e6;
   @import "./colorvariables-dark.scss";
 }
+html[theme=semidark] {
+  --chart-bool-icon-color: black;
+  --bs-body-color: black;
+  @import "./colorvariables-semidark.scss";
+}
