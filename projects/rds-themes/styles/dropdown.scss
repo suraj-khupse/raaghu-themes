@@ -64,9 +64,12 @@
   margin-top: 29px;
 }
 .Components{
-  margin-top: 52px
+  margin-top: 54px
 }
-
+#chartDrop{
+  max-height: 280px;
+  overflow-y: auto;
+}
 .multi-drop{
   position: absolute;
   z-index: 1000;
@@ -78,4 +81,8 @@
 .submenu-li:hover{
   background-color: #E9ECEF;
 }
-
+.selected-border{
+width: 20px;
+border-radius: 20px;
+height: 20px;
+}
