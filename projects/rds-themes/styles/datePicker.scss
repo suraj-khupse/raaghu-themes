@@ -1,0 +1,48 @@
+.testclass{
+    color: red;
+}
+
+.react-datepicker__input-container input{
+    padding: 0.2em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.datepicker__input{
+    border: 2px solid;
+}
+
+.datepicker__wrapper{
+    width: max-content !important;
+    display: flex;
+}
+
+.datepicker__icon-box{
+    display: flex;
+    height: 30px;
+
+}
+
+.datepicker__icon-box .input-group-text{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+
+.dropClass{
+    display: none;
+}
+
+.daterange__dropdown-item{
+    background-color: white;
+}
+.daterange__dropdown-item:hover{
+    background-color: lightblue;
+    color: white;
+}
+
+.input-group-datePicker {
+    
+    flex-wrap: nowrap !important;
+    
+}
